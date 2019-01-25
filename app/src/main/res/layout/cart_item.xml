@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <LinearLayout android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="3">
+        <ImageView
+            android:layout_width="120dp"
+            android:layout_height="120dp" />
+        <LinearLayout  android:id="@+id/layout_item_desc"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="2"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin">
+            <TextView android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="product_name"
+                android:textSize="12dp"
+                android:textStyle="bold"/>
+            <TextView android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Slim fit, cotton"
+                android:textSize="12dp"/>
+            <TextView android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Rs. 8,999"
+                android:textSize="12dp"
+                android:textColor="#4CAF50"
+                android:layout_marginTop="3dp"/>
+            <TextView android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Delivery charge: FREE"
+                android:textSize="12dp"/>
+            <LinearLayout android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="3dp">
+                <TextView android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Qty: 1"
+                    android:textSize="12dp"/>
+                <TextView android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Size: 41"
+                    android:textSize="12dp"
+                    android:layout_marginLeft="5dp"/>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <View android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/black"
+        android:layout_marginTop="4dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:orientation="horizontal"
+        android:layout_marginTop="8dp"
+        android:weightSum="2">
+
+        <LinearLayout android:id="@+id/layout_action1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:weightSum="2">
+            <ImageView android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/remove_24dp"/>
+            <TextView android:id="@+id/text_action1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginLeft="8dp"
+                android:text="Remove"
+                android:textSize="12dp"
+                android:textColor="@color/black"
+                android:gravity="left"/>
+        </LinearLayout>
+
+        <View android:layout_width="2dp"
+            android:layout_height="match_parent"
+            android:background="@color/colorBrown"/>
+
+        <LinearLayout android:id="@+id/layout_action2"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:weightSum="2">
+            <ImageView android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/edit_24dp"
+                />
+            <TextView android:id="@+id/text_action2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginLeft="8dp"
+                android:text="Edit"
+                android:textSize="12dp"
+                android:textColor="@color/colorBlack"
+                android:gravity="left"/>
+        </LinearLayout>
+
+    </LinearLayout>
+    <View android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@color/colorBrown"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"/>
+</LinearLayout>
